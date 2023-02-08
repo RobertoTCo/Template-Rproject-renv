@@ -87,7 +87,7 @@ Project Organization
     │   │   └── 
     │   │	
     │   ├── processing     <- Scripts to process and transform data
-    │	│   └── 
+    │   │   └──
     │   │
     │   └── analysis       <- Scripts to create exploratory analysis and visualizations
     │       └── 
