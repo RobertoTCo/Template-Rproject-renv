@@ -3,24 +3,42 @@ Template to work with R projects using Git and renv.
 
 ## A short description of the project.
 
+## How to connect Rstudio with Github
+Check https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/
+1. Install the packages 'usethis' and 'gitcreds' which provide some helpulf functions.
+2. Check if Git is installed. Write in the Rstudio terminal: $which git
+3. Create Github personal token. Use 'usethis::create_github_token()'
+4. Copy the personal token from the Github pop-up
+5. Call 'gitcreds::gitcreds_set()'. Follow the instructions.
+
+
+To pull a Github repository (recommended)
+  I. Create a project -> Version control.
+  II. Paste the repository link.
+  
+To upload a local repository: 
+  I. Create project with Git or call 'usethis:: use_git()' to create the required files.
+  II. Create Github repo with 'usethis::use_github()'
+
 ## How to start
 To start, we need to do some steps:
 1. Execute the R project to start working in the relative directory
 2. Install all required libraries using renv::restore().
 		*Note: this does not ensure OS or external packages compatiblity!
-.Optional: Install git precommit hooks (en caso de trabajar con Visual Code u otra IDE con plugins para Git):
+Optional: Install git precommit hooks (en caso de trabajar con Visual Code u otra IDE con plugins para Git):
   - `pre-commit install`
   
 ## Work with renv
 renv package have some useful functions to track changes in library requierments and keep it updated.
 1. First time a project is created, the function renv::activate() creates the enviroment in the project root to keep a specific subfolder for libraries
 2. The renv.lock in the root folder keep tracks of the needed libraries.
-2. Any time a library or package is installed you can update this file using renv::snapshot(). This function checks for 
+3. Any time a library or package is installed you can update this file using renv::snapshot(). This function checks for 
 	package names wrapped in requiere() or library() functions. It won't work with <package>::<function> lines!
 4. In case there is some problems when installing a package, refer to: https://community.rstudio.com/t/cant-install-packages-with-renv/96696/8
 	In many cases, utils::install.packages() works.
+5. Everytime the project need to be executed in a different machine, the packages can be recovered  fron renv.lock using renv::restore()
 
-## How to commit
+## How to commit from console
 To clone the repository:
 - `git clone <url-project>
 
