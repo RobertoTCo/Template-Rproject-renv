@@ -59,41 +59,41 @@ Project Organization
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump. 
-	│							*Important to not share private or sensible data.
-	│							*Recommended to have a backup data stored in local or cloud service!
+	│			*Important to not share private or sensible data.
+	│			*Recommended to have a backup data stored in local or cloud service!
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Folder with final running scripts. Can be raw scripts, Jupyter or R notebooks. 
-	│ 						   Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
+	│ 		       Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
     │                          e.g. `1.0-jqp-initial-data-exploration`.
     │
     ├── documentation      <- Data dictionaries, manuals, references and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   ├── figures        <- Generated graphics and figures to be used in reporting
-	│	└── tabular		   <- Tabular outputs from scripts and analysis (.txt, .csv ... )
+    │	└── tabular	   <- Tabular outputs from scripts and analysis (.txt, .csv ... )
     │
-	├── renv			   <- local enviroment from renv package folder with local R library
-	│
+	├── renv	   <- local enviroment from renv package folder with local R library
+    │
     ├── renv.lock          <- The requirements file for reproducing the local environment, from renv package
     ├── R.project          <- R project root
 	│
-	├── src                <- Source code (custom functions) for use in this project.
+	├── src            <- Source code (custom functions) for use in this project.
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── 
-	│	│	
+    │	│	
     │   ├── processing     <- Scripts to process and transform data
-	│	│	└── 
+    │	│   └── 
     │   │
-    │   └── analysis  <- Scripts to create exploratory analysis and visualizations
+    │   └── analysis       <- Scripts to create exploratory analysis and visualizations
     │       └── 
     │
-	│
-	├── renv 			   <- R environment with private libraries that do not clashes with central R managment
+    │
+    ├── renv 	           <- R environment with private libraries that do not clashes with central R managment
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 
