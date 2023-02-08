@@ -13,12 +13,12 @@ Check https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/
 
 
 To pull a Github repository (recommended)
-  I. Create a project -> Version control.
-  II. Paste the repository link.
+I. Create a project -> Version control.
+II. Paste the repository link.
   
 To upload a local repository: 
-  I. Create project with Git or call 'usethis:: use_git()' to create the required files.
-  II. Create Github repo with 'usethis::use_github()'
+I. Create project with Git or call 'usethis:: use_git()' to create the required files.
+II. Create Github repo with 'usethis::use_github()'
 
 ## How to start
 To start, we need to do some steps:
