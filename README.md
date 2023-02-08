@@ -74,7 +74,7 @@ Project Organization
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   ├── figures        <- Generated graphics and figures to be used in reporting
-    │   └── tabular	   <- Tabular outputs from scripts and analysis (.txt, .csv ... )
+    │   └── tabular        <- Tabular outputs from scripts and analysis (.txt, .csv ... )
     │
     ├── renv	           <- local enviroment from renv package folder with local R library
     │
