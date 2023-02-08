@@ -67,8 +67,8 @@ Project Organization
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Folder with final running scripts. Can be raw scripts, Jupyter or R notebooks. 
-    │ 		       	       Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
-    │                          e.g. `1.0-jqp-initial-data-exploration`.
+    │ 		        Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
+    │                   e.g. `1.0-jqp-initial-data-exploration`.
     │
     ├── documentation      <- Data dictionaries, manuals, references and all other explanatory materials.
     │
@@ -85,7 +85,7 @@ Project Organization
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── 
-    │	│	
+    │   │	
     │   ├── processing     <- Scripts to process and transform data
     │	│   └── 
     │   │
