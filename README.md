@@ -1,4 +1,4 @@
-emplate to work with R projects using Git and renv.
+Template to work with R projects using Git and renv.
 ==============================
 
 ## A short description of the project.
