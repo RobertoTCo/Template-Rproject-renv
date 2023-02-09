@@ -77,7 +77,7 @@ Project Organization
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump. 
-    │				*Important to not share private or sensible data.
+    │				*Important to not share private or sensible data. By default data commit is excluded in .gitignore.txt
     │				*Recommended to have a backup data stored in local or cloud service!
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
