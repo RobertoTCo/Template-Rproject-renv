@@ -6,7 +6,7 @@ Template to work with R projects using Git and renv.
 ## How to connect Rstudio with Github
 Check https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/
 1. Install the packages 'usethis' and 'gitcreds' which provide some helpulf functions.
-2. Check if Git is installed. Write in the Rstudio terminal: $which git
+2. Check if Git is installed. Write in the R terminal: $which git
 3. Create Github personal token. Use 'usethis::create_github_token()'
 4. Copy the personal token from the Github pop-up
 5. Call 'gitcreds::gitcreds_set()'. Follow the instructions.
@@ -55,14 +55,6 @@ To make your changes available to everyone, you must commit your changes:
 - There is a pre-commit hook that review your changes before the commit. If it fails, you must repeat the two steps until all hooks are passed.
 - It is recommended to commit every time you add/complete a new feature or function
 - Finally, to upload to github: `git push`
-
-## Useful things for jupyter notebooks
-Executing the following lines in a jupyter cell, we can update our imported scripts and jupyter will reimport the script
-automatically:
-```
-%load_ext autoreload
-%autoreload 2
-```
 
 ## Useful things for R notebooks
 
