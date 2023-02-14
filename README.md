@@ -112,4 +112,4 @@ Project Organization
 
 --------
 
-<p><small>Project based on a simpler <a target="_blank" href="https://cran.r-project.org/web/packages/renv/index.html">renv</a> adaptation of the Python version <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. &  <a target="_blank" href="http://projecttemplate.net/architecture.html"> Rproject Template </a> </small></p>
+<p><small>Project based on a simpler <a target="_blank" href="https://cran.r-project.org/web/packages/renv/index.html">renv</a> adaptation of the Python version <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a> &  <a target="_blank" href="http://projecttemplate.net/architecture.html"> Rproject Template </a> </small></p>
