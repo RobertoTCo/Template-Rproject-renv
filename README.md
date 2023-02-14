@@ -24,9 +24,7 @@ II. Create Github repo with 'usethis::use_github()'
 To start, we need to do some steps:
 1. Execute the R project to start working in the relative directory
 2. Install all required libraries using renv::restore().
-		*Note: this does not ensure OS or external packages compatiblity!
-Optional: Install git precommit hooks (en caso de trabajar con Visual Code u otra IDE con plugins para Git):
-  - `pre-commit install`
+   *Note: this template does not have docker support.
   
 ## Work with renv
 renv package have some useful functions to track changes in library requierments and keep it updated.
