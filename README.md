@@ -74,7 +74,7 @@ Project Organization
     │                         It can also be used as root directory for GitHub Pages to create a project website.
     │
     ├── lib                <- Folder for any files that provide useful functionality for your work, but do not constitute a statistical analysis per se. 
-    │                         Specifically, you should use the lib/helpers.R script to organize any small functions.
+    │                         Specifically, you should use the lib/helpers.R script or utils.R for more pythonic approach to organize any small functions.
     │                         Big blocks of functions for a specific topic could belong to a proper package or be stored in a .R script.
     │
     ├── notebooks          <- Folder with final running scripts. Can be raw scripts, Jupyter or R notebooks. 
@@ -112,4 +112,4 @@ Project Organization
 
 --------
 
-<p><small>Project based on an adaptation of the Python verison <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience and  <a target="_blank" href="http://projecttemplate.net/architecture.html"> Rproject Template </a> </small></p>
+<p><small>Project based on a simpler <a target="_blank" href="https://cran.r-project.org/web/packages/renv/index.html">renv</a> adaptation of the Python version <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. &  <a target="_blank" href="http://projecttemplate.net/architecture.html"> Rproject Template </a> </small></p>
