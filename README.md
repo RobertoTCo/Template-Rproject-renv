@@ -62,19 +62,20 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump. 
     │				*Important to not share private or sensible data. By default data commit is excluded in .gitignore.txt
     │				*Recommended to have a backup data stored in local or cloud service!
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- Here you can store any documentation that you’ve written about your analysis. 
+    │			      It can also be used as root directory for GitHub Pages to create a project website.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── lib		   <- Folder for any files that provide useful functionality for your work, but do not constitute a statistical analysis per se. 
+    │				Specifically, you should use the lib/helpers.R script to organize any small functions.
+    │				Big blocks of functions for a specific topic could belong to a proper package or be stored in a .R script.
     │
     ├── notebooks          <- Folder with final running scripts. Can be raw scripts, Jupyter or R notebooks. 
     │ 		        Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
@@ -82,31 +83,33 @@ Project Organization
     │
     ├── documentation      <- Data dictionaries, manuals, references and all other explanatory materials.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   ├── figures        <- Generated graphics and figures to be used in reporting
-    │   └── tabular        <- Tabular outputs from scripts and analysis (.txt, .csv ... )
+    ├──	profiling	   <- Here you can store any scripts you use to benchmark and time your code.
     │
-    ├── renv	           <- local enviroment from renv package folder with local R library
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   ├── articles	   <- In case articles or papers are submitted, the following subfolders can be used to keep track of changes: 
+    │	│			a. Sent, b. Reviews and c. Proof (final print version submitted to journal)
+    │   ├── figures        <- Generated graphics and figures to be used in reporting
+    │   └── tabular        <- Tabular outputs from scripts and analysis (.txt, .csv ... ) ready to be presented as supplemental info.
+    │
+    ├── renv	           <- R environment with private libraries that do not clashes with central R managment. Useful to keep frozen-version R packages
     │
     ├── renv.lock          <- The requirements file for reproducing the local environment, from renv package
+    │
     ├── R.project          <- R project root
     │
     ├── src                <- Source code (custom functions) for use in this project.
-    │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── 
-    │   │	
+    │	├── diagnostics	   <- Here you can store any scripts you use to diagnose your data sets for corruption or problematic data points.
+    │   │   └──	
     │   ├── processing     <- Scripts to process and transform data
     │   │   └──
-    │   │
     │   └── analysis       <- Scripts to create exploratory analysis and visualizations
     │       └── 
     │
-    │
-    ├── renv 	           <- R environment with private libraries that do not clashes with central R managment
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
+    └── tests		   <- Here you can store any test cases for the functions you’ve written. Your test files should use testthat style tests-
+    
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on an adaptation of the Python verison <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience and  <a target="_blank" href="http://projecttemplate.net/architecture.html"> Rproject Template </a> </small></p>
