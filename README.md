@@ -67,13 +67,13 @@ Project Organization
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump. 
-    │			      *Important to not share private or sensible data. By default data commit is excluded in .gitignore.txt
+    │                         *Important to not share private or sensible data. By default data commit is excluded in .gitignore.txt.
     │                         *Recommended to have a backup data stored in local or cloud service!
     │
     ├── docs               <- Here you can store any documentation that you’ve written about your analysis. 
     │                         It can also be used as root directory for GitHub Pages to create a project website.
     │
-    ├── lib		   <- Folder for any files that provide useful functionality for your work, but do not constitute a statistical analysis per se. 
+    ├── lib                <- Folder for any files that provide useful functionality for your work, but do not constitute a statistical analysis per se. 
     │                         Specifically, you should use the lib/helpers.R script to organize any small functions.
     │                         Big blocks of functions for a specific topic could belong to a proper package or be stored in a .R script.
     │
@@ -83,31 +83,31 @@ Project Organization
     │
     ├── documentation      <- Data dictionaries, manuals, references and all other explanatory materials.
     │
-    ├── profiling	   <- Here you can store any scripts you use to benchmark and time your code.
+    ├── profiling          <- Here you can store any scripts you use to benchmark and time your code.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   ├── articles       <- In case articles or papers are submitted, the following subfolders can be used to keep track of changes: 
-    │   │                     a. Sent, b. Reviews and c. Proof (final print version submitted to journal)
-    │   ├── figures        <- Generated graphics and figures to be used in reporting
+    │   │                     a. Sent, b. Reviews and c. Proof (final print version submitted to journal).
+    │   ├── figures        <- Generated graphics and figures to be used in reporting.
     │   └── tabular        <- Tabular outputs from scripts and analysis (.txt, .csv ... ) ready to be presented as supplemental info.
     │
-    ├── renv               <- R environment with private libraries that do not clashes with central R managment. Useful to keep frozen-version R packages
+    ├── renv               <- R environment with private libraries that do not clashes with central R managment. Useful to keep frozen-version R packages.
     │
-    ├── renv.lock          <- The requirements file for reproducing the local environment, from renv package
+    ├── renv.lock          <- The requirements file for reproducing the local environment, from renv package.
     │
-    ├── R.project          <- R project root
+    ├── R.project          <- R project root.
     │
     ├── src                <- Source code (custom functions) for use in this project.
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Scripts to download or generate data.
     │   │   └── 
     │   ├── diagnostics    <- Here you can store any scripts you use to diagnose your data sets for corruption or problematic data points.
     │   │   └──	
-    │   ├── processing     <- Scripts to process and transform data
+    │   ├── processing     <- Scripts to process and transform data.
     │   │   └──
-    │   └── analysis       <- Scripts to create exploratory analysis and visualizations
+    │   └── analysis       <- Scripts to create exploratory analysis and visualizations.
     │       └── 
     │
-    └── tests              <- Here you can store any test cases for the functions you’ve written. Your test files should use testthat style tests-
+    └── tests              <- Here you can store any test cases for the functions you’ve written. Your test files should use testthat style tests.
     
 
 --------
