@@ -3,8 +3,13 @@ Template to work with R projects using Git and renv.
 
 ## A short description of the project.
 
+## Install Git in your local machine
+- Go to: <a target="_blank" href="https://git-scm.com/download/"> Git download section </a>
+- Install the version suits better for your OS and requirements.
+
 ## How to connect Rstudio with Github
-Check https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/
+Check <a target="_blank" href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/"> How to use git github with r blog </a>
+
 1. Install the packages 'usethis' and 'gitcreds' which provide some helpulf functions.
 2. Check if Git is installed. Write in the R terminal: $which git
 3. Create Github personal token. Use 'usethis::create_github_token()'
@@ -32,8 +37,7 @@ renv package have some useful functions to track changes in library requierments
 2. The renv.lock in the root folder keep tracks of the needed libraries.
 3. Any time a library or package is installed you can update this file using renv::snapshot(). This function checks for 
 	package names wrapped in requiere() or library() functions. It won't work with <package>::<function> lines!
-4. In case there is some problems when installing a package, refer to: https://community.rstudio.com/t/cant-install-packages-with-renv/96696/8
-	In many cases, utils::install.packages() works.
+4. In case there is some problems when installing a package, refer to: <a target="_blank" href="https://community.rstudio.com/t/cant-install-packages-with-renv/96696/8"> This issue in the Rstudio community </a>. In many cases, utils::install.packages() works.
 5. Everytime the project need to be executed in a different machine, the packages can be recovered  fron renv.lock using renv::restore()
 
 ## How to commit from console
@@ -54,8 +58,13 @@ To make your changes available to everyone, you must commit your changes:
 - Finally, to upload to github: `git push`
 
 When working with some colleges, always keep a branch with stable code, usually named 'main-branch' and perform changes with parallel branchs named with their purpose.
-- When the parallel branch is finished and stable, the code can be merged into the main one with 'git request-pull'
+- When the parallel branch is finished and stable, the code can be merged into the main one with `git request-pull`
 - It is advisable to appoint one or two coordinators of the Git repo to review every pull request to the main branch.
+
+## Commit easier with IDEs
+Organizing a repo and the commits, push and pull is usually integrated in the most common IDEs.
+- If you are using Rstudio and you followed the above steps to connect to Github, there should be a tab to control commits and the history.
+- VSCode has some useful extensions to work with repositories and keep track 
 
 ## Useful things for R notebooks
 
