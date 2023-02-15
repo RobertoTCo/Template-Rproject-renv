@@ -57,14 +57,14 @@ To make your changes available to everyone, you must commit your changes:
 - It is recommended to commit every time you add/complete a new feature or function
 - Finally, to upload to github: `git push`
 
-When working with some colleges, always keep a branch with stable code, usually named 'main-branch' and perform changes with parallel branchs named with their purpose.
+When working with some colleges, always keep a branch with stable code, usually named 'main' or 'master' branch and perform changes with parallel branchs named with their purpose.
 - When the parallel branch is finished and stable, the code can be merged into the main one with `git request-pull`
 - It is advisable to appoint one or two coordinators of the Git repo to review every pull request to the main branch.
 
 ## Commit easier with IDEs
 Organizing a repo and the commits, push and pull is usually integrated in the most common IDEs.
 - If you are using Rstudio and you followed the above steps to connect to Github, there should be a tab to control commits and the history.
-- VSCode has some useful extensions to work with repositories and keep track 
+- VSCode has some useful extensions to work with repositories and keep track of the changes, like  <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"> Gitlens extension </a>.
 
 ## Useful things for R notebooks
 
