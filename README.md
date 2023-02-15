@@ -50,9 +50,12 @@ To download the latest changes at the repo:
 To make your changes available to everyone, you must commit your changes:
 - `git add .`
 - `git commit -m "A short description of your changes"`
-- There is a pre-commit hook that review your changes before the commit. If it fails, you must repeat the two steps until all hooks are passed.
 - It is recommended to commit every time you add/complete a new feature or function
 - Finally, to upload to github: `git push`
+
+When working with some colleges, always keep a branch with stable code, usually named 'main-branch' and perform changes with parallel branchs named with their purpose.
+- When the parallel branch is finished and stable, the code can be merged into the main one with 'git request-pull'
+- It is advisable to appoint one or two coordinators of the Git repo to review every pull request to the main branch.
 
 ## Useful things for R notebooks
 
@@ -60,7 +63,8 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md          <- The top-level README for developers using the project.
+    ├── .gitignnore        <- File to exclude folders and files to commits into the Git respository
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
@@ -68,7 +72,7 @@ Project Organization
     │                         *Important to not share private or sensible data. By default data commit is excluded in .gitignore.txt.
     │                         *Recommended to have a backup data stored in local or cloud service!
     │
-    ├── docs               <- Here you can store any documentation that you’ve written about your analysis. 
+    ├── docs               <- Any documentation about your analysis: Data dictionaries, manuals, references and all other explanatory materials.
     │                         It can also be used as root directory for GitHub Pages to create a project website.
     │
     ├── lib                <- Folder for any files that provide useful functionality for your work, but do not constitute a statistical analysis per se. 
@@ -79,8 +83,6 @@ Project Organization
     │                         Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description,
     │                         e.g. `1.0-jqp-initial-data-exploration`.
     │
-    ├── documentation      <- Data dictionaries, manuals, references and all other explanatory materials.
-    │
     ├── profiling          <- Here you can store any scripts you use to benchmark and time your code.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
@@ -89,7 +91,7 @@ Project Organization
     │   ├── figures        <- Generated graphics and figures to be used in reporting.
     │   └── tabular        <- Tabular outputs from scripts and analysis (.txt, .csv ... ) ready to be presented as supplemental info.
     │
-    ├── renv               <- R environment with private libraries that do not clashes with central R managment. Useful to keep frozen-version R packages.
+    ├── renv               <- R environment with private libraries that do not clash with central R managment. Useful to keep frozen-version R packages.
     │
     ├── renv.lock          <- The requirements file for reproducing the local environment, from renv package.
     │
