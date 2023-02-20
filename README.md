@@ -38,7 +38,7 @@ renv package have some useful functions to track changes in library requierments
 3. Any time a library or package is installed you can update this file using renv::snapshot(). This function checks for 
 	package names wrapped in requiere() or library() functions. It won't work with `<package>::<function>` lines!
 4. In case there is some problems when installing a package, refer to: <a target="_blank" href="https://community.rstudio.com/t/cant-install-packages-with-renv/96696/8"> This issue in the Rstudio community </a>. In many cases, utils::install.packages() works.
-5. Everytime the project need to be executed in a different machine, the packages can be recovered  fron renv.lock using `renv::restore()`.
+5. Everytime the project need to be executed in a different machine, the environment must be activated using `renv::activate()`. The packages can be recovered  fron renv.lock using `renv::restore()`. Asking to restore the packages without activating the enviroment will trigger a popup asking to whether active the environment first or not.
 
 ## How to commit from console
 To clone the repository:
